@@ -14,4 +14,5 @@ interface StudentsDao {
 
     @Query("Select * from students_data order by id ASC")
     fun readAllData(): LiveData<List<StudentsEntity>>
+
 }
